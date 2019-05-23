@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<meta charset="UTF-8"> 
+<html>
+    <header>
+        <title>Home Page</title>
+        <link rel="stylesheet" href="css/basicStyle.css">
+    </header>
+
+    <body>
+        <script>
+        
+        </script>
+        <form action="/" method="POST">
+            <p class="msg" th:text="${msg}"></p>
+            <div class="main_div">
+                <div class="main_header" style="font-size:30px">
+                    회원가입 
+                </div>
+                <div>
+                    <table class="main_table" >
+                        <tr> 
+                            <td style="width: 8px;"><label><img src="img/name.png" class="joinImg">  </label></td>  <td><input type="text" ID="ID" placeholder="아이디" ></td>  
+                        </tr>
+                        <tr>
+                            <td><label><img src="img/Password.png" class="joinImg">  </label></td> <td><input type="password"  ID="PW" placeholder="Password"> </td> 
+                        </tr>
+                        <tr>
+                            <td><label><img src="img/Password.png" class="joinImg"></label></td> <td> <input type="password" ID="ID_CHK" placeholder="Password Chack"></td> 
+                        </tr>
+                        <tr>
+                            <td><label><img src="img/id-card.png" class="joinImg"></label></td> <td><input type="text" id="nikname" placeholder="닉네임"></td> 
+                        </tr>
+                        <tr> 
+                            <td><label><label><img src="img/email.png" class="joinImg"></label></td> <td> <input type="text" id="email" placeholder="이메일"> @ 
+                            <select id="emailadress" > 
+                                <option value="">이메일선택</option>
+                                <option value="01">naver.com</option>
+                                <option value="02">gamil.com</option>
+                                <option value="03">hanmail.com</option>
+                            </select></td> 
+                        </tr>
+                        <tr>
+                            <td><label><img src="img/notebook.png" class="joinImg"></label></td> <td> <textarea id="ext" > </textarea></td> 
+                        </tr>
+                    </table>
+                    <br/>
+                     
+                </div>
+                <div style="float:right">
+                    <input type="submit" id="submit" value="회원가입" >  
+
+                    <input type="button" id="exit" value="취소" >
+                </div> 
+            </div>
+        </form>     
+
+
+    </body>
+</html>

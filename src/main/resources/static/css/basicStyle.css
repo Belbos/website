@@ -1,0 +1,43 @@
+html, body{
+    margin:0;
+    padding:0;
+    transition: .2s;
+}
+
+/* 텍스트 박스 디자인 */
+.textbox {position: relative;}
+
+
+input[type=text], input[type=password]{
+    border-radius: 4px 4px 4px 4px;
+    border: 1px solid #999;
+}
+input[type=text]:focus, input[type=password]:focus{
+    border-radius: 4px 4px 4px 4px;
+    border: 1px solid #299100;
+}
+
+.textbox label { 
+    /* position: absolute; */ 
+    top: 1px; /* input 요소의 border-top 설정값 만큼 */ 
+    left: 1px; /* input 요소의 border-left 설정값 만큼 */ 
+    padding: .8em .5em; /* input 요소의 padding 값 만큼 */ 
+    color: #000000; 
+    cursor: text; 
+}
+
+/* MAIN 화면 틀고정을 위한 DIV 설정*/
+.main_div{ margin:auto; border:1px solid hsl(0, 2%, 63%); width: 400px; }
+.main_header{ width:150px; margin:0 auto; min-height:0}
+
+/* 회원가입 화면 이미지 파일 셋팅*/
+.joinImg{
+    width: 20px;
+    float: right;
+    margin-right: 6px;
+}
+
+.main_table tr td{
+    height: 30px;
+    
+}
