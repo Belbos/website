@@ -18,7 +18,7 @@ public class DemoApplication {
 	public String index(@PathVariable int num, Model model) {
 		int res = num;
 		model.addAttribute("msg", "num : " + res);
-		return "Hello";
+		return "  Hello";
 	}
 
 	public static void main(String[] args) {
